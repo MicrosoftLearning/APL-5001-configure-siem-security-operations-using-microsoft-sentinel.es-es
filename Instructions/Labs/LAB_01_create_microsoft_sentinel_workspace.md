@@ -9,18 +9,18 @@ lab:
 ## Directrices generales
 
 - Al crear objetos, use la configuración predeterminada a menos que haya requisitos que requieran configuraciones diferentes.
-- Solo cree, elimine o modifique objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
+- Solo crea, elimina o modifica objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
 - Si hay varios enfoques para lograr un objetivo, elija siempre el enfoque que requiere la menor cantidad de esfuerzo administrativo.
 
 Actualmente estamos evaluando la posición de seguridad existente de nuestro entorno corporativo. Necesitamos su ayuda para configurar una solución de Administración de eventos e información de seguridad (SIEM) que ayude a identificar ataques cibernéticos actuales y futuros.
 
-## Diagrama de la arquitectura
+## Diagrama de arquitectura
 
 ![Diagrama con el área de trabajo de Log Analytics.](../Media/apl-5001-lab-diagrams-01.png)
 
 ## Tareas de aptitudes
 
-Debe implementar un área de trabajo de Microsoft Sentinel. El plan debe cumplir los requisitos siguientes:
+Debe implementar un área de trabajo de Microsoft Sentinel. La solución debe cumplir los requisitos siguientes:
 
 - Asegúrese de que los datos de Sentinel se almacenan en la región de Azure del Oeste de EE. UU.
 - Asegúrese de que todos los registros de análisis de Sentinel se conservan durante 180 días.
