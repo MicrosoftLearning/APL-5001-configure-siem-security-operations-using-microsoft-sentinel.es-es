@@ -9,12 +9,12 @@ lab:
 ## Directrices generales
 
 - Al crear objetos, use la configuración predeterminada a menos que haya requisitos que requieran configuraciones diferentes.
-- Solo cree, elimine o modifique objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
+- Solo crea, elimina o modifica objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
 - Si hay varios enfoques para lograr un objetivo, elija siempre el enfoque que requiere la menor cantidad de esfuerzo administrativo.
 
 Es necesario configurar Microsoft Sentinel para recibir eventos de seguridad de máquinas virtuales que ejecutan Windows.
 
-## Diagrama de la arquitectura
+## Diagrama de arquitectura
 
 ![Diagrama de eventos de Seguridad de Windows a través de AMA mediante DCR](../Media/apl-5001-lab-diagrams-lab03.png)
 

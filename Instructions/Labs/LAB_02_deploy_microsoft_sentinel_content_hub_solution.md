@@ -9,12 +9,12 @@ lab:
 ## Directrices generales
 
 - Al crear objetos, use la configuración predeterminada a menos que haya requisitos que requieran configuraciones diferentes.
-- Solo cree, elimine o modifique objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
+- Solo crea, elimina o modifica objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
 - Si hay varios enfoques para lograr un objetivo, elija siempre el enfoque que requiere la menor cantidad de esfuerzo administrativo.
 
 Necesitamos configurar Microsoft Sentinel para ingerir datos mediante soluciones de Microsoft Sentinel.
 
-## Diagrama de la arquitectura
+## Diagrama de arquitectura
 
 ![Diagrama de conectores de datos del Centro de contenido](../Media/apl-5001-lab-diagrams-lab02.png)
 
@@ -64,9 +64,9 @@ Configure el conector de datos para la actividad de Azure para aplicar todos los
   1. En el área `Configuration`, bajo la pestaña `Instructions`, desplácese hacia abajo `2. Connect your subscriptions...` y seleccione **Iniciar el asistente de asignación de Azure Policy>**.
   1. En la pestaña **Datos básicos**, seleccione el botón de puntos suspensivos (...) en **Ámbito** y seleccione la suscripción de en la lista desplegable y haga clic en **Seleccionar**.
   1. Seleccione la pestaña **Parámetros** y elija el área de trabajo de la lista desplegable **Área de trabajo principal de Log Analytics**.
-  1. Seleccione la pestaña **Corrección** y active la casilla **Crear una tarea de corrección**.
+  1. Selecciona la pestaña **Corrección** y activa la casilla **Crear una tarea de corrección**.
   1. Seleccione el botón **Revisar y crear** para revisar la configuración.
-  1. Seleccione **Crear** para finalizar.
+  1. Selecciona **Crear** para finalizar.
   
 ### Tarea 3: Configurar el conector de datos de Defender for Cloud
 

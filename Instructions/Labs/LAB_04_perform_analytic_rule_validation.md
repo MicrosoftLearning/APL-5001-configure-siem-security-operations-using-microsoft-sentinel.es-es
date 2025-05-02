@@ -9,12 +9,12 @@ lab:
 ## Directrices generales
 
 - Al crear objetos, use la configuración predeterminada a menos que haya requisitos que requieran configuraciones diferentes.
-- Solo cree, elimine o modifique objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
+- Solo crea, elimina o modifica objetos para cumplir los requisitos indicados. Los cambios innecesarios en el entorno pueden afectar negativamente a la puntuación final.
 - Si hay varios enfoques para lograr un objetivo, elija siempre el enfoque que requiere la menor cantidad de esfuerzo administrativo.
 
 Se necesita validar que la implementación de Microsoft Sentinel recibe eventos de seguridad y crea incidentes a partir de máquinas virtuales que ejecutan Windows.
 
-## Diagrama de la arquitectura
+## Diagrama de arquitectura
 
 ![Diagrama de ataque simulado ](../Media/apl-5001-lab-diagrams-lab04.png)
 
@@ -30,7 +30,7 @@ Use ataques simulados para probar reglas de análisis en Microsoft Sentinel. Obt
 
 1. Busque y seleccione la máquina virtual **vm1** en Azure, desplácese hacia abajo en los elementos del menú hasta **Operaciones** y seleccione **Ejecutar comando**
 1. En el panel **Ejecutar comando**, seleccione **RunPowerShellScript**
-1. Copie los siguientes comandos para simular la creación de una cuenta de administrador en el formulario `PowerShell Script` y seleccione **Ejecutar**
+1. Copia los comandos siguientes para simular la creación de una cuenta de administrador en el formulario `PowerShell Script` y selecciona **Ejecutar**
 
     ```CommandPrompt
     net user theusernametoadd /add
@@ -38,7 +38,7 @@ Use ataques simulados para probar reglas de análisis en Microsoft Sentinel. Obt
     net localgroup administrators theusernametoadd /add
     ```
 
->**Nota**: Asegúrese de que solo haya un comando por línea, puede volver a ejecutar los comandos si cambia el nombre de usuario.
+>**Nota**: asegúrate de que solo haya un comando por línea y que puedes volver a ejecutar los comandos cambiando el nombre de usuario.
 
 1. En la ventana `Output` debería ver `The command completed successfully` tres veces
 
@@ -47,7 +47,7 @@ Use ataques simulados para probar reglas de análisis en Microsoft Sentinel. Obt
 Compruebe que se crea un incidente que coincida con los criterios de la regla de análisis y la automatización. Obtenga más información sobre la [administración de incidentes de Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/incident-investigation).
 
 1. En `Microsoft Sentinel`, vaya a la sección del menú `Threat management` y seleccione **Inicidentes**
-1. Debería ver un incidente que coincida con el `Severity` y `Title` que configuró en la regla `NRT` que creó.
-1. Seleccione el `Incident`y se abrirá el panel `detail`
-1. La asignación `Owner` debe ser **Operator1**, creada a partir del `Automation rule` y el `Tactics and techniques` debe ser **Elevación de privilegios** (a partir de la regla `NRT`)
+1. Deberías ver un incidente que coincida con y `Severity``Title` que has configurado en la regla `NRT` que has creado
+1. Selecciona y `Incident` se abrirá el panel `detail`
+1. La asignación `Owner` debe ser **Operator1**, creada a partir de `Automation rule` y `Tactics and techniques` debe ser **Elevación de privilegios** (a partir de la regla `NRT`)
 1. Seleccione **Ver todos los detalles** para ver todas las `Incident management` capacidades y `Incident actions`
